@@ -26,11 +26,14 @@ box-sizing: border-box;}
 .about{width: 100%; height: auto; margin-top: 150px; display: flex; 
 justify-content: center; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .about h1{color: #585858; font-size: 60px;}
-.photo{width: 100%; height: auto; display: flex; justify-content: center; margin-top: 100px;}
-.ment{width: 100%; height: auto; display: flex; justify-content: center; margin-top: 60px;}
+.photo{width: 100%; height: auto; display: flex; justify-content: center; margin-top: 100px;
+transform: translateY(100px); transition: all 1s; opacity: 0;}
+.ment{width: 100%; height: auto; display: flex; justify-content: center; margin-top: 60px;
+transform: translateY(100px); transition: all 1s; opacity: 0;}
 .ment p{color: #585858; text-align: center;}
 .btn{width: 100%; height: auto; display: flex; justify-content: center; 
-flex-direction: row; align-items: center; margin-top: 60px;}
+flex-direction: row; align-items: center; margin-top: 60px;
+transform: translateY(100px); transition: all 1s; opacity: 0;}
 .btn div{margin: 0 20px; font-size: 30px; font-weight: bold; 
 display: flex; align-items: center; justify-content: center; color: #fff;}
 .btn1{width: 200px; height: 200px; border-radius: 100px; background-color: #585858; cursor: pointer;}

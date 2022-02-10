@@ -56,8 +56,21 @@
         $(function(){
             $(window).scroll(function(){
                 var ws = $(this).scrollTop();
-                if(ws>300){
+                var about=$('.about').offset().top;
+                var photo=$('.photo').offset().top;
+                var ment=$('.ment').offset().top;
+                var btn=$('.btn').offset().top;
+          if(ws>about-700){
             $('.about').css("transform","translateY(0px)").css("opacity","1");
+          }
+          if(ws>photo-700){
+            $('.photo').css("transform","translateY(0px)").css("opacity","1");
+          }
+          if(ws>ment-700){
+            $('.ment').css("transform","translateY(0px)").css("opacity","1");
+          }
+          if(ws>btn-700){
+            $('.btn').css("transform","translateY(0px)").css("opacity","1");
           }
             });
         });
