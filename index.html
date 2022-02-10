@@ -24,7 +24,65 @@
         <div class="photo"><img src="img/photo.jpg" alt=""></div>
         <div class="ment"><p>안녕하세요, 웹 퍼블리셔를 목표로 하고있는 류충환 입니다.<br>
         신입으로서 열심히 배우는 자세로 회사생활에 임할 수 있도록 노력하겠습니다.</p></div>
+        <div class="btn">
+            <div class="btn1">Profile</div>
+            <div class="btn2">Education</div>
+        </div>
     </div>
+
+    <div class="pop1">
+        <div class="pop1_1">
+            <p>NAME: 류충환 / RYU CHUNG HWAN</p>
+            <p>BIRTH: 1995.02.16</p>
+            <p>PHONE: 010-4042-2080</p>
+            <p>E-MAIL: fb2087@naver.com</p>
+            <p>HOME: 시흥시 거모동 / SIHUENG,GEOMODONG</p>
+        </div>
+    </div>
+
+    <div class="pop2">
+        <div class="pop2_1">
+            <p>2010.03.02~2013.02.27 : 장곡고등학교 졸업</p>
+            <p>2013.03.02~2016.02.27 : 서영대학교 졸업</p>
+            <p>2021.09.27~2022.02.22 : (디지털디자인)반응형<br> UIUX웹퍼블리셔디자인 수료</p>
+        </div>
+    </div>
+
+
+
+
     <script src="js/particle.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var ws = $(this).scrollTop();
+                if(ws>300){
+            $('.about').css("transform","translateY(0px)").css("opacity","1");
+          }
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $('.pop1').hide();
+            $('.pop2').hide();
+
+            $('.btn1').click(function(){
+                $('.pop1').fadeIn();
+            });
+            $('.btn2').click(function(){
+                $('.pop2').fadeIn();
+            });
+
+
+            $('.pop1').click(function(){
+                $('.pop1').fadeOut();
+            });
+
+            $('.pop2').click(function(){
+                $('.pop2').fadeOut();
+            });
+        });
+    </script>
 </body>
 </html>
