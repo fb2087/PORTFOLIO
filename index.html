@@ -30,6 +30,80 @@
         </div>
     </div>
 
+    <div class="section3">
+        <div class="skill_wrap">
+
+            <div class="section_title">
+                <h1>SKILLS</h1>
+            </div>
+
+            <div class="skill_box">
+
+
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">JAVASCRIPT</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">JQUERY</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">PHOTOSHOP</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">ILLUSTRATOR</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="pop1">
         <div class="pop1_1">
             <p>NAME: 류충환 / RYU CHUNG HWAN</p>
@@ -49,6 +123,25 @@
     </div>
     
 
+
+    <script>
+
+        $('.skill-per').each(function () {
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per + '%');
+            $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                duration: 1000,
+                step: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                },
+                complete: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                }
+            });
+        });
+
+    </script>
 
 
     
