@@ -1,4 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
 body{background-color: #F2F2F2; position: relative;}
 
 
@@ -111,10 +112,15 @@ background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center;
 align-items: center; z-index: 2;}
 .pop3_1{width: 800px; height: 800px; background-color: #f2f2f2; display: flex; 
 align-items: center; justify-content: center; flex-direction: column;}
-.pop3_2{width: 100%; height: 60%; background-color: aqua; display: flex; align-items: center;
+.pop3_2{width: 100%; height: 60%; display: flex; align-items: center;
 justify-content: center;}
 .pop3_2 img{width: 90%; height: 80%;}
-.pop3_3{width: 90%; height: 40%; background-color: pink;}
+.pop3_3{width: 90%; height: 40%;}
+.pop3_3 p{margin-top: 30px;}
+.pop3btn{width: 100%; height: auto; margin-top: 50px;}
+.pop3_3 button{width: 100px; height: 40px; border:1px solid #585858; cursor: pointer;
+font-size: 20px;}
+.pop3_3 button:hover{background-color: cornflowerblue; color: #f2f2f2;}
 
 .pop4{width: 100%; height: 100%; position: fixed; top: 0; left: 0; 
 background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center;
