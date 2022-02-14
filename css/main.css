@@ -86,12 +86,64 @@ cursor: pointer; position: relative;}
 .portbtn2 img{width: 100%; height: 100%;}
 .section4_2{width: 1200px; height: 350px; margin-top: 100px;
 display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;}
-.section4_2 .portbtn3,.portbtn4{width: 550px; height: 100%; cursor: pointer;}
+.section4_2 .portbtn3,.portbtn4{width: 550px; height: 100%; cursor: pointer; position: relative;}
 .portbtn3 img{width: 100%; height: 100%;}
 .portbtn4 img{width: 100%; height: 100%;}
 
-.portbtn1:hover{display: .hover;}
 
-.hover{width: 100%; height: 100%; background-color: cornflowerblue; position: absolute;
-top: 0; left: 0; display: flex; align-items: center;  justify-content: center; display: none;}
-.hover p{width: auto; height: 80px;}
+.hover1{width: 100%; height: 100%; background-color: cornflowerblue; position: absolute;
+top: 0; left: 0; display: flex; align-items: center;  justify-content: center; opacity: 0.9;}
+.hover1 p{width: auto; height: 80px;}
+.hover2{width: 100%; height: 100%; background-color: cornflowerblue; position: absolute;
+top: 0; left: 0; display: flex; align-items: center;  justify-content: center; opacity: 0.9;}
+.hover2 p{width: auto; height: 80px;}
+.hover3{width: 100%; height: 100%; background-color: cornflowerblue; position: absolute;
+top: 0; left: 0; display: flex; align-items: center;  justify-content: center; opacity: 0.9;}
+.hover3 p{width: auto; height: 80px;}
+.hover4{width: 100%; height: 100%; background-color: cornflowerblue; position: absolute;
+top: 0; left: 0; display: flex; align-items: center;  justify-content: center; opacity: 0.9;}
+.hover4 p{width: auto; height: 80px;}
+
+
+
+.pop3{width: 100%; height: 100%; position: fixed; top: 0; left: 0; 
+background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center;
+align-items: center; z-index: 2;}
+.pop3_1{width: 800px; height: 800px; background-color: #f2f2f2; display: flex; 
+align-items: center; justify-content: center; flex-direction: column;}
+.pop3_2{width: 100%; height: 60%; background-color: aqua; display: flex; align-items: center;
+justify-content: center;}
+.pop3_2 img{width: 90%; height: 80%;}
+.pop3_3{width: 90%; height: 40%; background-color: pink;}
+
+.pop4{width: 100%; height: 100%; position: fixed; top: 0; left: 0; 
+background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center;
+align-items: center; z-index: 2;}
+.pop4_1{width: 800px; height: 800px; background-color: #f2f2f2; display: flex; 
+align-items: center; justify-content: center; flex-direction: column;}
+.pop4_2{width: 100%; height: 60%; background-color: aqua; display: flex; align-items: center;
+justify-content: center;}
+.pop4_2 img{width: 90%; height: 80%;}
+.pop4_3{width: 100%; height: 40%; background-color: pink;}
+
+.pop5{width: 100%; height: 100%; position: fixed; top: 0; left: 0; 
+background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center;
+align-items: center; z-index: 2;}
+.pop5_1{width: 800px; height: 800px; background-color: #f2f2f2; display: flex; 
+align-items: center; justify-content: center; flex-direction: column;}
+.pop5_2{width: 100%; height: 60%; background-color: aqua; display: flex; align-items: center;
+justify-content: center;}
+.pop5_2 img{width: 90%; height: 80%;}
+.pop5_3{width: 100%; height: 40%; background-color: pink;}
+
+.pop6{width: 100%; height: 100%; position: fixed; top: 0; left: 0; 
+background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center;
+align-items: center; z-index: 2;}
+.pop6_1{width: 800px; height: 800px; background-color: #f2f2f2; display: flex; 
+align-items: center; justify-content: center; flex-direction: column;}
+.pop6_2{width: 100%; height: 60%; background-color: aqua; display: flex; align-items: center;
+justify-content: center;}
+.pop6_2 img{width: 90%; height: 80%;}
+.pop6_3{width: 100%; height: 40%; background-color: pink;}
+
+

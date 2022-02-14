@@ -105,15 +105,30 @@
         <div class="section4_1">                                   
             <div class="portbtn1">
                 <img src="img/bookoa.jpg" alt="">
-                <div class="hover">
+                <div class="hover1">
                     <p>SEE MORE</p>
                 </div>
             </div>
-            <div class="portbtn2"><img src="img/Fromsoftware.jpg" alt=""></div>
+            <div class="portbtn2">
+                <img src="img/Fromsoftware.jpg" alt="">
+                <div class="hover2">
+                    <p>SEE MORE</p>
+                </div>
+            </div>
         </div>
         <div class="section4_2">
-            <div class="portbtn3"><img src="img/Hyundai.jpg" alt=""></div>
-            <div class="portbtn4"><img src="img/Apple.jpg" alt=""></div>
+            <div class="portbtn3">
+                <img src="img/Hyundai.jpg" alt="">
+                <div class="hover3">
+                    <p>SEE MORE</p>
+                </div>
+            </div>
+            <div class="portbtn4">
+                <img src="img/Apple.jpg" alt="">
+                <div class="hover4">
+                    <p>SEE MORE</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -141,6 +156,49 @@
         </div>
     </div>
     
+
+
+    <div class="pop3">
+        <div class="pop3_1">
+            <div class="pop3_2">
+                <img src="img/bookoa.jpg" alt="">
+            </div>
+            <div class="pop3_3">
+                <h1>Bookoa Website</h1>
+                <p>KaKao에서 제공하는 Open API 데이터를 받아 AJAX를 사용하여 제작한 교보문고 홈페이지를 제작하였습니다. AJAX를 사용하는 것이 목적이었기 때문에, 전체적인 디자인은 기존 홈페이지 구성을 참고하였습니다. 메인 페이지, 1개의 서브 페이지로 구성되어 있습니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pop4">
+        <div class="pop4_1">
+            <div class="pop4_2">
+                <img src="img/Fromsoftware.jpg" alt="">
+            </div>
+            <div class="pop4_3">
+
+            </div>
+        </div>
+    </div>
+    <div class="pop5">
+        <div class="pop5_1">
+            <div class="pop5_2">
+                <img src="img/Hyundai.jpg" alt="">
+            </div>
+            <div class="pop5_3">
+
+            </div>
+        </div>
+    </div>
+    <div class="pop6">
+        <div class="pop6_1">
+            <div class="pop6_2">
+                <img src="img/Apple.jpg" alt="">
+            </div>
+            <div class="pop6_3">
+
+            </div>
+        </div>
+    </div>
 
 
     <script>
@@ -191,6 +249,10 @@
         $(function(){
             $('.pop1').hide();
             $('.pop2').hide();
+            $('.pop3').hide();
+            $('.pop4').hide();
+            $('.pop5').hide();
+            $('.pop6').hide();
 
             $('.btn1').click(function(){
                 $('.pop1').fadeIn();
@@ -199,6 +261,23 @@
                 $('.pop2').fadeIn();
             });
 
+            $('.portbtn1').click(function(){
+                $('.pop3').fadeIn();
+            });
+            $('.portbtn2').click(function(){
+                $('.pop4').fadeIn();
+            });
+
+            $('.portbtn3').click(function(){
+                $('.pop5').fadeIn();
+            });
+            $('.portbtn4').click(function(){
+                $('.pop6').fadeIn();
+            });
+
+
+
+
 
             $('.pop1').click(function(){
                 $('.pop1').fadeOut();
@@ -206,6 +285,61 @@
 
             $('.pop2').click(function(){
                 $('.pop2').fadeOut();
+            });
+
+            $('.pop3').click(function(){
+                $('.pop3').fadeOut();
+            });
+            $('.pop4').click(function(){
+                $('.pop4').fadeOut();
+            });
+
+            $('.pop5').click(function(){
+                $('.pop5').fadeOut();
+            });
+            $('.pop6').click(function(){
+                $('.pop6').fadeOut();
+            });
+        });
+    </script>
+
+    <script>
+        $(function(){
+            $('.hover1').hide();
+            $('.hover2').hide();
+            $('.hover3').hide();
+            $('.hover4').hide();
+
+            $('.portbtn1').mouseover(function(){
+                $('.hover1').fadeIn();
+            });
+
+            $('.hover1').mouseleave(function(){
+                $('.hover1').fadeOut();
+            });
+
+            $('.portbtn2').mouseover(function(){
+                $('.hover2').fadeIn();
+            });
+
+            $('.hover2').mouseleave(function(){
+                $('.hover2').fadeOut();
+            });
+
+            $('.portbtn3').mouseover(function(){
+                $('.hover3').fadeIn();
+            });
+
+            $('.hover3').mouseleave(function(){
+                $('.hover3').fadeOut();
+            });
+
+            $('.portbtn4').mouseover(function(){
+                $('.hover4').fadeIn();
+            });
+
+            $('.hover4').mouseleave(function(){
+                $('.hover4').fadeOut();
             });
         });
     </script>
