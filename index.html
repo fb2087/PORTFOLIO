@@ -133,6 +133,29 @@
     </div>
 
 
+    <div class="section5">
+        <div><h1>CONTACT</h1></div>
+        <div class="contact">
+        <div class="contact1">
+            <p>PHONE: 010 4042 2080</p>
+            <img src="img/phone.png" alt="">
+        </div>
+        <div class="contact2">
+            <p>MAIL: fb2087@naver.com</p>
+            <img src="img/mail.png" alt="">
+        </div>
+        <div class="contact3">
+            <p>KAKAO: fb2087@naver.com</p>
+            <img src="img/kakao.png" alt="">
+        </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h1>RYU CHUNG HWAN</h1>
+        <p>copyright ⓒ CHUNGHWAN RYU all rights reserved</p>
+    </footer>
 
 
 
@@ -167,8 +190,8 @@
                 <h1>Bookoa Website</h1>
                 <p>KaKao에서 제공하는 Open API 데이터를 받아 AJAX를 사용하여 제작한 교보문고 홈페이지를 제작하였습니다. AJAX를 사용하는 것이 목적이었기 때문에, 전체적인 디자인은 기존 홈페이지 구성을 참고하였습니다. 메인 페이지, 1개의 서브 페이지로 구성되어 있습니다.</p>
                 <div class="pop3btn">
-                    <button type="button" onclick="location.href='https://fb2087.github.io/book/' "> MAIN</button>
-                    <button type="button" onclick="location.href='https://fb2087.github.io/book/sub.html' "> SUB</button>
+                    <button type="button" onclick="window.open('https://fb2087.github.io/book/')"> MAIN</button>
+                    <button type="button" onclick="window.open('https://fb2087.github.io/book/sub.html') "> SUB</button>
                 </div>
             </div>
             
@@ -180,7 +203,11 @@
                 <img src="img/Fromsoftware.jpg" alt="">
             </div>
             <div class="pop4_3">
-
+                <h1>Fromsoftware Website</h1>
+                <p>게임 회사인 프롬 소프트웨어를 커버해 보았습니다. 화면 구성은 기존 홈페이지의 구성으로 구현하였고 자바스크립트와 JQUERY를 이용하여 효과를주었습니다. 1개의 메인페이지로 구성되어 있습니다.</p>
+                <div class="pop4btn">
+                    <button type="button" onclick="window.open('https://fb2087.github.io/FROMSOFTWARE/') "> MAIN</button>
+                </div>
             </div>
         </div>
     </div>
@@ -190,7 +217,12 @@
                 <img src="img/Hyundai.jpg" alt="">
             </div>
             <div class="pop5_3">
-
+                <h1>Hyundai Website</h1>
+                <p>자동차회사 현대자동차의 사이트를 제작해 보았습니다. 전체적인 디자인은 팜플렛 사이트에 나와있는 레이아웃을 참고하였고 1개의 메인페이지와 1개의서브페이지로 구성되어있으며 서브페이지에는 JQUERY를적용하여 차량의 색상을 선택할수 있도록 구현하였습니다.</p>
+                <div class="pop5btn">
+                    <button type="button" onclick="window.open('https://fb2087.github.io/HYUNDAI/') "> MAIN</button>
+                    <button type="button" onclick="window.open('https://fb2087.github.io/HYUNDAI/sub.html') "> SUB</button>
+                </div>
             </div>
         </div>
     </div>
@@ -200,7 +232,12 @@
                 <img src="img/Apple.jpg" alt="">
             </div>
             <div class="pop6_3">
-
+                <h1>Apple Website</h1>
+                <p>애플 홈페이지를 제작해 보았습니다. 전체적인 디자인은 팜플렛 사이트의 레이아웃을 참고하였고 1개의 메인페이지와 1개의 서브페이지로 구성되어 있으며 서브페이지에는 핸드폰의 색상을 변경할 수 있게 JQUERY를 사용하여 구현하였습니다.</p>
+                <div class="pop6btn">
+                    <button type="button" onclick="window.open=('https://fb2087.github.io/Apple/') "> MAIN</button>
+                    <button type="button" onclick="window.open=('https://fb2087.github.io/Apple/AppleBuyPage.html') "> SUB</button>
+                </div>
             </div>
         </div>
     </div>
@@ -208,21 +245,45 @@
 
     <script>
 
-        $('.skill-per').each(function () {
-            var $this = $(this);
-            var per = $this.attr('per');
-            $this.css("width", per + '%');
-            $({ animatedValue: 0 }).animate({ animatedValue: per }, {
-                duration: 1000,
-                step: function () {
-                    $this.attr('per', Math.floor(this.animatedValue) + '%');
-                },
-                complete: function () {
-                    $this.attr('per', Math.floor(this.animatedValue) + '%');
-                }
-            });
-        });
+        
+    
+$(window).scroll(function(){
+    var sec3=$(this).scrollTop();
 
+
+
+var s3=$('.section3').offset().top;
+    $('.skill-per').each(function () {
+        
+
+
+
+        if(sec3>s3-500){ 
+            var $this2 = $(this);
+            var per = $this2.attr('per');
+            $this2.css("width", per + '%');
+          
+        
+        
+    // $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+        
+    //             duration: 1000,
+    //             step: function () {
+    //                 $this2.attr('per', Math.floor(this.animatedValue) + '%');
+    //             },
+    //             complete: function () {
+    //                 $this2.attr('per', Math.floor(this.animatedValue) + '%');
+    //             }
+    //         });
+
+            
+        
+        }
+        // per = $(this).attr('per' + '%');
+  
+        
+        });
+    });     
     </script>
 
 
